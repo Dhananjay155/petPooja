@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import '../App.css'
 const Select = ({ label, options, value, onChange, error }) => (
   <div className="form-group">

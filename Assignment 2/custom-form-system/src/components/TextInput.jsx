@@ -1,5 +1,4 @@
-import React from "react";
-
+// eslint-disable-next-line react/prop-types
 const TextInput = ({ label, placeholder, value, onChange, error }) => (
   <div className="form-group">
     <label>{label}</label>

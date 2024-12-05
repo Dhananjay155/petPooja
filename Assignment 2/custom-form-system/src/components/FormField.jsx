@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import TextInput from "./TextInput";
 import TextArea from "./TextArea";
 import Select from "./Select";

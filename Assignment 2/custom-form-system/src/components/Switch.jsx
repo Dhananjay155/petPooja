@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 
 const Switch = ({ label, value, onChange }) => (
   <div className="form-group">
