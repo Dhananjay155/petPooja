@@ -1,0 +1,88 @@
+.date-picker-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.preset-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.preset-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.preset-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-color: #0056b3;
+  transform: scale(1.05); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.preset-button.active {
+  background-color: #ff0000;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.custom-date-range {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.date-input {
+  flex: 1;
+}
+
+.date-input label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.date-input input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-input input:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.date-input input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.8);
+}
+
+@media (max-width: 425px) {
+  .preset-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .custom-date-range {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+}
