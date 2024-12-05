@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PresetButtons from './PresetButtons';
 import CustomDateRange from './CustomDateRange';
 import '../../App.css';
@@ -21,10 +21,12 @@ const DatePickerContainer = ({ onDateChange, styles }) => {
         from = to = today.toISOString().split('T')[0];
         break;
       case 'Yesterday':
-        const yesterday = new Date(today);
-        yesterday.setDate(yesterday.getDate() - 1);
-        from = to = yesterday.toISOString().split('T')[0];
-        break;
+        { 
+            const yesterday = new Date(today);
+            yesterday.setDate(yesterday.getDate() - 1);
+            from = to = yesterday.toISOString().split('T')[0];
+            break; 
+        }
       case 'This Month':
         from = new Date(today.getFullYear(), today.getMonth(), 1).toISOString().split('T')[0];
         to = new Date(today.getFullYear(), today.getMonth() + 1, 0).toISOString().split('T')[0];

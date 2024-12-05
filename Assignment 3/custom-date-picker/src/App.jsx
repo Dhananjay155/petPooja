@@ -1,4 +1,3 @@
-import React from 'react';
 import DatePickerContainer from './components/DatePicker/DatePickerContainer';
 
 const App = () => {
